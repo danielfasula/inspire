@@ -21,6 +21,10 @@
   text-transform: uppercase;
 }
 
+.clock {
+  font-size: 80px;
+}
+
 :root {
   --blue: blue;
   --indigo: indigo;

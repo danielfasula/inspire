@@ -13,6 +13,8 @@ class TodosService {
         try {
             const res = await myApi.get('')
             ProxyState.todos = res.data.map(rawTodo => new Todo(rawTodo))
+            ProxyState.user = res.data[0]?.user
+            console.log(ProxyState.user);
         } catch (error) {
             console.error(error);
         }
