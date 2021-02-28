@@ -20,7 +20,7 @@ function _drawGreeting() {
 
     document.getElementById('clock').innerText = time
 
-    document.getElementById('greeting').innerText = user ? greeting + ", " + user + "!" : greeting
+    document.getElementById('greeting').innerText = user ? greeting + ", " + user + "!" : greeting + "!"
 
     setTimeout(_drawGreeting, 3000)
 
@@ -29,7 +29,6 @@ function _drawGreeting() {
 export default class GreetingController {
     constructor() {
         _drawGreeting()
-        console.log("greeting");
     }
 
     setUser(event) {
