@@ -31,7 +31,4 @@ export default class GreetingController {
         _drawGreeting()
     }
 
-    setUser(event) {
-
-    }
 }

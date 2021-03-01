@@ -6,7 +6,7 @@ function _drawImage() {
     document.getElementById('bg-img').style.backgroundImage = /*html*/ `url('${ProxyState.image}')`
 }
 
-export default class ImageController {
+export default class ImagesController {
     constructor() {
         ProxyState.on('image', _drawImage)
     }
